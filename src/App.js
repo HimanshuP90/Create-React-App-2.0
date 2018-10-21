@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo, {ReactComponent as ReactLogo } from './logo.svg';
 import './App.scss';
 
 const Content = props => (
@@ -24,6 +24,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <ReactLogo className="App-logo" />
           <Content />
         </header>
       </div>
