@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import logo, {ReactComponent as ReactLogo } from './logo.svg';
 import './App.scss';
+import Link from "./Link/Link";
 
 const Content = props => (
   <>
     <p>
     Edit <code>src/App.js</code> and save to reload.
     </p>
-    <a
-    className="App-link"
-    href="https://reactjs.org"
-    target="_blank"
-    rel="noopener noreferrer"
+    <Link
+      mode="error"
+      href="https://reactjs.org"
+      target="_blank"
+      rel="noopener noreferrer"
     >
     Learn React
-    </a>
+    </Link>
   </>
 )
 
